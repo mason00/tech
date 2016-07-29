@@ -40,12 +40,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Catalog\IProductService.cs" />
+    <Compile Include="ProductService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TechTest01.Domain\TechTest01.Domain.csproj">
       <Project>{883e0c00-69dd-4b75-840d-a5b62916467e}</Project>
       <Name>TechTest01.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TechTest01.Repository\TechTest01.Repository.csproj">
+      <Project>{860C1ECD-6C25-4925-A13D-6BCBD8FB27FE}</Project>
+      <Name>TechTest01.Repository</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,0 +1,60 @@
+﻿@model IEnumerable<TechTest01.Domain.Catalog.Product>
+
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>View</h2>
+
+<div>
+    <h4>Product</h4>
+@foreach (var item in Model)
+{
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(modelItem => modelItem.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => item.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(modelItem => modelItem.Slug)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => item.Slug)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(modelItem => modelItem.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => item.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(modelItem => modelItem.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => item.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(modelItem => modelItem.ImageUrl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => item.ImageUrl)
+        </dd>
+
+    </dl>
+    <hr />
+}
+</div>
+<p>
+    @Html.ActionLink("All products", "Index", "Products")
+</p>

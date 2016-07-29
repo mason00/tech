@@ -13,6 +13,8 @@ namespace TechTest01.Web
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            
+            Bootstrapper.Initialise();
         }
     }
 }

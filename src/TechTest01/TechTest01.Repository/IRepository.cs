@@ -7,6 +7,6 @@ namespace TechTest01.Repository
 {
     public interface IRepository<TEntity> where TEntity : BaseEntity
     {
-        
+        TEntity GetById(int id);
     }
 }
